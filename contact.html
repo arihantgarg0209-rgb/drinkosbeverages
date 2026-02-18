@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — DrinkoSip Beverages | Get In Touch</title>
+  <meta name="description" content="Contact DrinkoSip Beverages — distributorship opportunities, bulk orders, feedback. Yamunanagar, Haryana. info@drinkosbeverages.com">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="canonical" href="https://drinkosbeverages.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader-logo"><img src="images/logo.png" alt="DrinkoSip"></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <canvas id="bubbles-canvas"></canvas>
+  <div class="mobile-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="DrinkoSip" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="overline reveal">Let's Connect</p>
+      <h1 class="reveal">Get In Touch</h1>
+      <p class="reveal">We'd love to hear from you &mdash; feedback, bulk orders, or distributorship inquiries.</p>
+      <nav class="breadcrumb reveal">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-form-card reveal">
+          <h3>Send Us a Message</h3>
+          <p class="form-desc">Fill out the form below and we'll get back to you shortly.</p>
+
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a subject...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="distributorship">Distributorship</option>
+                  <option value="bulk-order">Bulk Order</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message &rarr;</button>
+          </form>
+
+          <div class="form-success">Thank you! Your message has been sent successfully. We'll get back to you soon. 🙏</div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="contact-info-stack">
+          <div class="contact-info-card reveal reveal-delay-1">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <h4>Our Location</h4>
+              <p>Yamunanagar, Haryana, India</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-2">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>info@drinkosbeverages.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-3">
+            <div class="contact-info-icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon &ndash; Sat: 9:00 AM &ndash; 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-4">
+            <div class="contact-info-icon">🤝</div>
+            <div>
+              <h4>Distributorship</h4>
+              <p>Want to distribute DrinkoSip in your region? We're expanding across India! Great margins, premium products.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-5">
+            <div class="contact-info-icon">📦</div>
+            <div>
+              <h4>Bulk Orders</h4>
+              <p>Events, functions, or retail stock? Competitive rates for large orders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-wrapper reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54826.87!2d77.26!3d30.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f9ae0dbdb13a5%3A0x1c7a1a3a94cf4fc3!2sYamunanagar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="DrinkoSip Beverages location — Yamunanagar, Haryana">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Distributor CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="reveal">Become a DrinkoSip Distributor</h2>
+        <p class="reveal">We're expanding across India. Premium products, competitive margins, a brand customers love. Zero complaints since 2021.</p>
+        <a href="#" class="btn btn-orange btn-lg reveal" onclick="document.getElementById('subject').value='distributorship';document.getElementById('name').focus();window.scrollTo({top:0,behavior:'smooth'});return false;">Apply for Distributorship &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="images/logo.png" alt="DrinkoSip Logo"></div>
+          <p class="footer-tagline">Premium Indian beverages crafted with 100% pure ingredients. Every sip is a celebration of bold flavors.</p>
+          <p class="footer-hindi hindi-text">शौक नवाबों का 👑</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">Lucknawi Zeera</a></li>
+            <li><a href="products.html">Strong Energy Drink</a></li>
+            <li><a href="products.html">Banta Lemon Soda</a></li>
+            <li><a href="products.html">Packaged Water</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regions</h4>
+          <div class="state-pills">
+            <span class="state-pill">Haryana</span>
+            <span class="state-pill">Punjab</span>
+            <span class="state-pill">UP</span>
+            <span class="state-pill">Uttarakhand</span>
+            <span class="state-pill">Himachal</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2021&ndash;2026 DrinkoSip Beverages. All rights reserved.</p>
+        <p>Made with ❤️ in Yamunanagar, Haryana 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bubbles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
