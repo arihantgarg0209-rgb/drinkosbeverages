@@ -3,18 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DrinkoSip — Premium Indian Beverages | शौक नवाबों का</title>
-  <meta name="description" content="DrinkoSip Beverages — Premium Indian drinks crafted with 100% pure ingredients. Lucknawi Zeera, Energy Drinks, Banta Soda & more. शौक नवाबों का">
-  <meta name="keywords" content="DrinkoSip, Lucknawi Zeera, Indian beverages, masala jeera soda, energy drink, banta soda, packaged water">
-  <link rel="icon" href="images/logo.png" type="image/png">
-  <link rel="canonical" href="https://drinkosbeverages.com/">
-  <meta property="og:title" content="DrinkoSip — Premium Indian Beverages">
-  <meta property="og:description" content="Premium desi beverages crafted with 100% pure ingredients. शौक नवाबों का">
-  <meta property="og:image" content="https://drinkosbeverages.com/images/product-hero.jpg">
-  <meta property="og:url" content="https://drinkosbeverages.com/">
+  <meta name="description" content="DrinkoSip — Premium Indian beverages crafted with tradition. Lucknawi Zeera, Strong Energy Drink, Banta Lemon Soda & Pure Drinking Water. शौक नवाबों का">
+  <title>DrinkoSip — Premium Beverages, Crafted with Tradition</title>
+  <meta name="google-site-verification" content="dONTwcQpI_OrU4QCVpa9Vlfib4A28EA-OL_mDRs3dHA" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
@@ -22,377 +17,335 @@
 
   <!-- Page Loader -->
   <div class="page-loader">
-    <div class="loader-logo"><img src="images/logo.png" alt="DrinkoSip"></div>
-    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <img src="images/logo.png" alt="DrinkoSip" class="page-loader__logo" style="mix-blend-mode: multiply;">
+    <div class="page-loader__bar"></div>
   </div>
 
-  <!-- Bubbles Canvas -->
-  <canvas id="bubbles-canvas"></canvas>
-
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay"></div>
+  <!-- Bubbles -->
+  <div class="bubbles-container"></div>
 
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="DrinkoSip — Premium Indian Beverages" class="nav-logo-img">
-      </a>
-      <div class="nav-links">
+      <a href="index.html"><img src="images/logo.png" alt="DrinkoSip Logo" class="navbar__logo"></a>
+      <div class="navbar__links">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About Us</a>
         <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="navbar__cta">Contact Us</a>
       </div>
-      <button class="nav-toggle" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="navbar__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- ============================================
-       SECTION 1 — HERO
-       ============================================ -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="mobile-menu__cta">Get In Touch</a>
+  </div>
+
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
-        <p class="hero-overline">Premium Beverages Since 2021</p>
-        <h1 class="hero-title">
-          <span class="line">Taste the</span>
-          <span class="line gradient-text">DrinkoSip</span>
-          <span class="line">Difference</span>
-        </h1>
-        <p class="hero-hindi hindi-text">शौक नवाबों का 👑</p>
-        <p class="hero-desc">Premium Indian beverages crafted with 100% pure ingredients. Bold flavors, authentic spices, and the perfect fizz — from the royal streets of Lucknow to your doorstep.</p>
-        <div class="hero-buttons">
-          <a href="products.html" class="btn btn-primary btn-lg">Explore Products &rarr;</a>
-          <a href="about.html" class="btn btn-outline btn-lg">Our Story</a>
+      <div class="hero__text">
+        <p class="hero__overline hero-fade-up">&#10022; PREMIUM BEVERAGES SINCE 2021</p>
+        <h1 class="hero__title hero-fade-up">Taste the Royal<br><span>Refreshment</span></h1>
+        <p class="hero__hindi hero-fade-up hindi">शौक नवाबों का 👑</p>
+        <p class="hero__desc hero-fade-up">Authentic Indian flavors crafted for modern taste. From the royal spices of Lucknow to the fizz of desi banta — experience beverages made with 100% pure ingredients.</p>
+        <div class="hero__buttons hero-fade-up">
+          <a href="products.html" class="btn btn--primary btn--large">Explore Products →</a>
+          <a href="contact.html" class="btn btn--secondary btn--large">Become a Distributor</a>
+        </div>
+        <div class="hero__trust hero-fade-up">
+          <span>🌿 100% Natural</span>
+          <span>🏆 Zero Complaints</span>
+          <span>📍 5+ States</span>
         </div>
       </div>
-
-      <div class="hero-visual">
-        <div class="hero-blob"></div>
-        <div class="hero-image-wrapper">
-          <img src="images/product-hero.jpg" alt="DrinkoSip Lucknawi Zeera — two premium masala jeera bottles with golden splash, lemons and spices">
-          <div class="hero-badge float-gentle">🌿 100% Pure</div>
+      <div class="hero__image-wrapper hero-fade-right">
+        <span class="hero__badge pulse-glow">⭐ FLAGSHIP PRODUCT</span>
+        <div class="hero__image">
+          <img src="images/zeera-banner-ad.png" alt="DrinkoSip Lucknawi Zeera — two bottles with golden liquid splash, lemons and cumin spices">
         </div>
       </div>
     </div>
-
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
-        <path fill="#FEFCF3" d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80Z"/>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 720,0 1440,40 L1440,60 L0,60 Z" fill="rgba(245,158,11,0.04)"></path>
       </svg>
     </div>
   </section>
 
-  <!-- ============================================
-       SECTION 2 — SOCIAL PROOF / INTRO
-       ============================================ -->
-  <section class="social-proof section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title-decorated">
-          <span class="line-ornament"></span>
-          <h2 class="reveal">Truly Refreshing. Truly Indian.</h2>
-          <span class="line-ornament"></span>
-        </div>
-        <p class="section-desc reveal">A mix of authentic desi flavors, natural ingredients, and just the right amount of fizz. From the royal streets of Lucknow to your doorstep.</p>
-      </div>
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span class="marquee__text">LUCKNAWI ZEERA &nbsp;★&nbsp; STRONG ENERGY &nbsp;★&nbsp; BANTA LEMON &nbsp;★&nbsp; PURE WATER &nbsp;★&nbsp; शौक नवाबों का &nbsp;★&nbsp; 100% PURE &nbsp;★&nbsp; LUCKNAWI ZEERA &nbsp;★&nbsp; STRONG ENERGY &nbsp;★&nbsp; BANTA LEMON &nbsp;★&nbsp; PURE WATER &nbsp;★&nbsp; शौक नवाबों का &nbsp;★&nbsp; 100% PURE &nbsp;★&nbsp;</span>
+      <span class="marquee__text">LUCKNAWI ZEERA &nbsp;★&nbsp; STRONG ENERGY &nbsp;★&nbsp; BANTA LEMON &nbsp;★&nbsp; PURE WATER &nbsp;★&nbsp; शौक नवाबों का &nbsp;★&nbsp; 100% PURE &nbsp;★&nbsp; LUCKNAWI ZEERA &nbsp;★&nbsp; STRONG ENERGY &nbsp;★&nbsp; BANTA LEMON &nbsp;★&nbsp; PURE WATER &nbsp;★&nbsp; शौक नवाबों का &nbsp;★&nbsp; 100% PURE &nbsp;★&nbsp;</span>
     </div>
+  </div>
 
-    <div class="marquee-wrapper">
-      <div class="marquee-track">
-        <span class="marquee-item">MASALA ZEERA</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">ENERGY DRINK</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">BANTA SODA</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">PURE WATER</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">PREMIUM QUALITY</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item hindi-text">शौक नवाबों का</span>
-        <span class="marquee-item">&bull;</span>
-        <!-- Duplicate for seamless loop -->
-        <span class="marquee-item">MASALA ZEERA</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">ENERGY DRINK</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">BANTA SODA</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">PURE WATER</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item">PREMIUM QUALITY</span>
-        <span class="marquee-item">&bull;</span>
-        <span class="marquee-item hindi-text">शौक नवाबों का</span>
-        <span class="marquee-item">&bull;</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 3 — PRODUCTS SHOWCASE
-       ============================================ -->
-  <section class="products-showcase section">
+  <!-- Product Showcase -->
+  <section class="products-showcase">
     <div class="container">
-      <div class="section-header centered">
-        <p class="overline reveal">The Collection</p>
-        <h2 class="reveal">Our Lineup</h2>
-        <p class="reveal">Every sip tells a story. Six products, each crafted to perfection.</p>
+      <div class="section-header reveal">
+        <p class="section-header__overline">★ THE COLLECTION</p>
+        <h2 class="section-header__title">Our Blockbuster Lineup</h2>
+        <p class="section-header__subtitle">Six products, each crafted to perfection. Every sip tells a story.</p>
       </div>
 
-      <div class="product-grid">
-        <!-- 1. Lucknawi Zeera -->
-        <div class="product-card reveal reveal-delay-1" data-color="gold">
-          <div class="product-card-image">
-            <img src="images/zeera-bottle.jpeg" alt="Lucknawi Zeera — DrinkoSip flagship masala jeera drink">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Flagship</span>
-            <h3 class="product-card-name">Lucknawi Zeera</h3>
-            <p class="product-card-tagline">The OG Masala King 👑</p>
+      <div class="product-grid reveal-stagger">
+        <div class="product-card product-card--amber">
+          <div class="product-card__image"><img src="images/zeera-bottle.jpeg" alt="Lucknawi Zeera — Masala Jeera Drink"></div>
+          <div class="product-card__content">
+            <span class="product-card__tag">⭐ Flagship</span>
+            <h3 class="product-card__title">Lucknawi Zeera</h3>
+            <p class="product-card__tagline">The OG Masala King 👑</p>
           </div>
         </div>
 
-        <!-- 2. Strong Energy Drink -->
-        <div class="product-card reveal reveal-delay-2" data-color="red">
-          <div class="product-card-image">
-            <img src="images/strong-energy.jpeg" alt="Strong Energy Drink by DrinkoSip">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Energy</span>
-            <h3 class="product-card-name">Strong Energy Drink</h3>
-            <p class="product-card-tagline">Power Unlimited ⚡</p>
+        <div class="product-card product-card--red">
+          <div class="product-card__image"><img src="images/strong-ad.png" alt="DrinkoSip Strong Energy Drink"></div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Energy</span>
+            <h3 class="product-card__title">Strong Energy Drink</h3>
+            <p class="product-card__tagline">Power Unlimited ⚡</p>
           </div>
         </div>
 
-        <!-- 3. Banta Lemon Soda -->
-        <div class="product-card reveal reveal-delay-3" data-color="green">
-          <div class="product-card-image">
-            <img src="images/banta-lemon.jpeg" alt="Banta Lemon Soda by DrinkoSip">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Soda</span>
-            <h3 class="product-card-name">Banta Lemon Soda</h3>
-            <p class="product-card-tagline">Desi Nostalgia 🫧</p>
+        <div class="product-card product-card--lime">
+          <div class="product-card__image"><img src="images/banta-lemon.jpeg" alt="Banta Lemon Soda"></div>
+          <div class="product-card__content">
+            <span class="product-card__tag">Soda</span>
+            <h3 class="product-card__title">Banta Lemon Soda</h3>
+            <p class="product-card__tagline">Desi Nostalgia 🫧</p>
           </div>
         </div>
 
-        <!-- 4. Drinkos Water 1L -->
-        <div class="product-card reveal reveal-delay-1" data-color="blue">
-          <div class="product-card-image">
-            <img src="images/water-1l.jpeg" alt="Drinkos Packaged Water 1 Litre">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Water</span>
-            <h3 class="product-card-name">Drinkos Water 1L</h3>
-            <p class="product-card-tagline">Pure Hydration 💧</p>
-          </div>
-        </div>
-
-        <!-- 5. Drinkos Water 500ml -->
-        <div class="product-card reveal reveal-delay-2" data-color="blue">
-          <div class="product-card-image">
-            <img src="images/water-500ml.jpeg" alt="Drinkos Packaged Water 500ml">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Water</span>
-            <h3 class="product-card-name">Drinkos Water 500ml</h3>
-            <p class="product-card-tagline">Refresh On The Go 💧</p>
-          </div>
-        </div>
-
-        <!-- 6. Drinkos Water 250ml -->
-        <div class="product-card reveal reveal-delay-3" data-color="blue">
-          <div class="product-card-image">
-            <img src="images/water-250ml.jpeg" alt="Drinkos Packaged Water 250ml">
-          </div>
-          <div class="product-card-body">
-            <span class="product-card-tag">Water</span>
-            <h3 class="product-card-name">Drinkos Water 250ml</h3>
-            <p class="product-card-tagline">Pocket Freshness 💧</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-cta reveal">
-        <a href="products.html" class="btn btn-primary">View All Products &rarr;</a>
+      <div class="products-showcase__cta reveal">
+        <a href="products.html" class="btn btn--primary btn--pill">View All Products →</a>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       SECTION 4 — FEATURED PRODUCT (Lucknawi Zeera)
-       ============================================ -->
-  <section class="featured-product section">
+  <!-- Lifestyle Gallery -->
+  <section class="lifestyle">
     <div class="container">
-      <div class="featured-grid">
-        <div class="featured-image reveal">
-          <img src="images/product-hero.jpg" alt="DrinkoSip Lucknawi Zeera — flagship masala jeera drink with authentic spices">
+      <div class="section-header reveal">
+        <p class="section-header__overline">📸 LIVE REFRESHED</p>
+        <h2 class="section-header__title">The DrinkoSip Life</h2>
+        <p class="section-header__subtitle">From city streets to mountain peaks — refreshment has no boundaries.</p>
+      </div>
+      <div class="lifestyle__gallery reveal-stagger">
+        <div class="lifestyle__item">
+          <div class="lifestyle__image-wrap"><img src="images/zeera-lifestyle.png" alt="Young man drinking Lucknawi Zeera in the city"></div>
+          <p class="lifestyle__caption">Urban Refreshment</p>
         </div>
+        <div class="lifestyle__item">
+          <div class="lifestyle__image-wrap"><img src="images/strong-lifestyle.png" alt="Strong Energy Drink in snowy mountain landscape"></div>
+          <p class="lifestyle__caption">Mountain Energy</p>
+        </div>
+        <div class="lifestyle__item">
+          <div class="lifestyle__image-wrap"><img src="images/banta-lifestyle.png" alt="Happy man with Banta Lemon Soda in green fields"></div>
+          <p class="lifestyle__caption">Field Fresh</p>
+        </div>
+        <div class="lifestyle__item">
+          <div class="lifestyle__image-wrap"><img src="images/zeera-lifestyle-mountains.png" alt="Man with Lucknawi Zeera in snowy mountains"></div>
+          <p class="lifestyle__caption">Peak Adventure</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="featured-content">
-          <p class="overline reveal">Our Flagship</p>
-          <h2 class="reveal">Lucknawi Zeera</h2>
-          <p class="featured-hindi hindi-text reveal">शुद्ध मसालों से तैयार</p>
-          <p class="desc reveal">Born from the royal kitchens of Lucknow, our flagship masala jeera drink is crafted with authentic Indian spices. Every sip carries the rich heritage of Nawabi flavors — bold, refreshing, and unapologetically desi.</p>
+  <!-- Parallax Banner -->
+  <section class="parallax-banner" style="background-image: url('images/strong-lifestyle.png');">
+    <div class="parallax-banner__content">
+      <h2 class="parallax-banner__title">Refreshment Has No Boundaries</h2>
+      <p class="parallax-banner__subtitle">From city streets to mountain peaks — DrinkoSip goes where you go.</p>
+    </div>
+  </section>
 
-          <div class="ingredients-row reveal">
-            <div class="ingredient-item">
-              <div class="ingredient-icon">🫘</div>
-              <span>Cumin</span>
-              <span class="hindi-label hindi-text">जीरा</span>
+  <!-- Featured Product -->
+  <section class="featured">
+    <div class="container">
+      <div class="featured__image slide-left">
+        <img src="images/product-hero.png" alt="Lucknawi Zeera bottles with golden liquid splash, lemons, cumin and spices">
+      </div>
+      <div class="featured__text slide-right">
+        <p class="featured__overline">🏆 OUR FLAGSHIP</p>
+        <h2 class="featured__title">Lucknawi Zeera</h2>
+        <p class="featured__hindi hindi">शुद्ध मसालों से तैयार</p>
+        <p class="featured__desc">Our crown jewel. Crafted with authentic Lucknawi spices — cumin, lemon, black pepper, and black salt — this royal masala drink captures centuries of flavor tradition in every sip.</p>
+        <div class="featured__ingredients">
+          <div class="featured__ingredient"><span>🫘</span> <span>Cumin (जीरा)</span></div>
+          <div class="featured__ingredient"><span>🍋</span> <span>Lemon (नींबू)</span></div>
+          <div class="featured__ingredient"><span>🌶️</span> <span>Black Pepper (काली मिर्च)</span></div>
+          <div class="featured__ingredient"><span>🧂</span> <span>Black Salt (काला नमक)</span></div>
+        </div>
+        <a href="products.html" class="btn btn--primary">Discover More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Values -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__overline">&#10022; WHY DRINKOSIP</p>
+        <h2 class="section-header__title">Crafted with Tradition. Designed for Today.</h2>
+      </div>
+      <div class="values__grid reveal-stagger">
+        <div class="value-card">
+          <div class="value-card__icon value-card__icon--green">🌿</div>
+          <h3 class="value-card__title">100% Pure Ingredients</h3>
+          <p class="value-card__desc">Only the finest natural ingredients. No artificial shortcuts, no harmful chemicals — just pure quality in every bottle.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon value-card__icon--amber">🏆</div>
+          <h3 class="value-card__title">Zero Complaints</h3>
+          <p class="value-card__desc">Since our founding in 2021, we've maintained a perfect track record. Customer satisfaction is our obsession.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon value-card__icon--brown">📍</div>
+          <h3 class="value-card__title">5+ States Served</h3>
+          <p class="value-card__desc">From Haryana to Himachal Pradesh — DrinkoSip is rapidly becoming North India's favorite beverage brand.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon value-card__icon--red">🏭</div>
+          <h3 class="value-card__title">Modern Facility</h3>
+          <p class="value-card__desc">State-of-the-art manufacturing in Yamunanagar. Every batch passes rigorous quality checks and is FSSAI compliant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <div class="stat__number" data-counter="5" data-suffix="+">0</div>
+          <div class="stat__label">States Served</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number" data-counter="6" data-suffix="+">0</div>
+          <div class="stat__label">Products</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number" data-counter="1000" data-suffix="+">0</div>
+          <div class="stat__label">Retail Partners</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number" data-counter="2021" data-suffix="">0</div>
+          <div class="stat__label">Established</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__overline">💬 WHAT PEOPLE SAY</p>
+        <h2 class="section-header__title">Loved by Thousands</h2>
+      </div>
+      <div class="testimonials__grid reveal-stagger">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Lucknawi Zeera is the best masala drink I've ever had. The spice balance is perfect — refreshing and authentic!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--amber">RS</div>
+            <div>
+              <div class="testimonial-card__name">Rahul S.</div>
+              <div class="testimonial-card__location">Chandigarh, Punjab</div>
             </div>
-            <div class="ingredient-item">
-              <div class="ingredient-icon">🍋</div>
-              <span>Lemon</span>
-              <span class="hindi-label hindi-text">नींबू</span>
-            </div>
-            <div class="ingredient-item">
-              <div class="ingredient-icon">🌶️</div>
-              <span>Black Pepper</span>
-              <span class="hindi-label hindi-text">काली मिर्च</span>
-            </div>
-            <div class="ingredient-item">
-              <div class="ingredient-icon">🧂</div>
-              <span>Black Salt</span>
-              <span class="hindi-label hindi-text">काला नमक</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"We switched to DrinkoSip water for our office. Crystal clear quality and the pricing is unbeatable."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--lime">PM</div>
+            <div>
+              <div class="testimonial-card__name">Priya M.</div>
+              <div class="testimonial-card__location">Dehradun, Uttarakhand</div>
             </div>
           </div>
-
-          <a href="products.html" class="btn btn-primary reveal">Learn More &rarr;</a>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"The Banta Lemon Soda reminds me of childhood gully banta but in a premium bottle. My family loves it!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--blue">AK</div>
+            <div>
+              <div class="testimonial-card__name">Amit K.</div>
+              <div class="testimonial-card__location">Lucknow, UP</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       SECTION 5 — WHY DRINKOSIP
-       ============================================ -->
-  <section class="why-section section">
+  <!-- Distributor CTA -->
+  <section class="distributor-cta">
     <div class="container">
-      <div class="section-header centered">
-        <p class="overline reveal">Why Choose Us</p>
-        <h2 class="reveal">The DrinkoSip Promise</h2>
-        <p class="reveal">What makes every bottle special.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">🌿</div>
-          <h4>100% Pure Ingredients</h4>
-          <p>No artificial colors, no preservatives. Just nature's finest in every bottle.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon">🏆</div>
-          <h4>Zero Complaints Since 2021</h4>
-          <p>Our track record speaks for itself. Quality you can trust, every time.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-icon">🗺️</div>
-          <h4>5+ States Served</h4>
-          <p>From Haryana to Himachal — spreading refreshment across North India.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-4">
-          <div class="feature-icon">⭐</div>
-          <h4>Premium Quality</h4>
-          <p>FSSAI compliant, lab-tested, and crafted in state-of-the-art facilities.</p>
-        </div>
-      </div>
-
-      <div class="stats-bar">
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-number" data-count="5" data-suffix="+">0</div>
-          <div class="stat-label">States</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-number" data-count="6" data-suffix="+">0</div>
-          <div class="stat-label">Products</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-number" data-count="1000" data-suffix="+">0</div>
-          <div class="stat-label">Retailers</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-4">
-          <div class="stat-number" data-count="2021" data-prefix="">0</div>
-          <div class="stat-label">Est.</div>
-        </div>
+      <div class="distributor-cta__content reveal">
+        <h2 class="distributor-cta__title">Partner With DrinkoSip</h2>
+        <p class="distributor-cta__text">Join our growing distribution network across North India. Premium products, competitive margins, zero complaints, and a brand customers love.</p>
+        <a href="contact.html" class="btn btn--lime btn--large">Become a Distributor →</a>
+        <p class="distributor-cta__regions">Currently active in: Haryana &bull; Punjab &bull; UP &bull; Uttarakhand &bull; Himachal Pradesh</p>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       SECTION 6 — CTA (Distributor)
-       ============================================ -->
-  <section class="cta-section section">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="reveal">Become a DrinkoSip Distributor</h2>
-        <p class="reveal">Join the fastest growing Indian beverage brand. Premium products, great margins, and zero complaints since 2021. Let's grow together.</p>
-        <a href="contact.html" class="btn btn-orange btn-lg reveal">Partner With Us &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo"><img src="images/logo.png" alt="DrinkoSip Logo"></div>
-          <p class="footer-tagline">Premium Indian beverages crafted with 100% pure ingredients. Every sip is a celebration of bold flavors.</p>
-          <p class="footer-hindi hindi-text">शौक नवाबों का 👑</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Twitter">🐦</a>
+      <div class="footer__grid">
+        <div>
+          <img src="images/logo.png" alt="DrinkoSip Logo" class="footer__logo">
+          <p class="footer__brand-desc">Premium Indian beverages crafted with tradition and pure ingredients. From Yamunanagar to your doorstep.</p>
+          <p class="footer__hindi hindi">शौक नवाबों का 👑</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Products</h4>
-          <ul>
-            <li><a href="products.html">Lucknawi Zeera</a></li>
-            <li><a href="products.html">Strong Energy Drink</a></li>
-            <li><a href="products.html">Banta Lemon Soda</a></li>
-            <li><a href="products.html">Packaged Water</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Regions</h4>
-          <div class="state-pills">
-            <span class="state-pill">Haryana</span>
-            <span class="state-pill">Punjab</span>
-            <span class="state-pill">UP</span>
-            <span class="state-pill">Uttarakhand</span>
-            <span class="state-pill">Himachal</span>
+        <div>
+          <h4 class="footer__heading">Products</h4>
+          <div class="footer__links">
+            <a href="products.html">Lucknawi Zeera</a>
+            <a href="products.html">Strong Energy</a>
+            <a href="products.html">Banta Soda</a>
+            <a href="products.html">Drinkos Water</a>
           </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Available In</h4>
+          <div class="footer__state">Haryana</div>
+          <div class="footer__state">Punjab</div>
+          <div class="footer__state">Uttar Pradesh</div>
+          <div class="footer__state">Uttarakhand</div>
+          <div class="footer__state">Himachal Pradesh</div>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2021&ndash;2026 DrinkoSip Beverages. All rights reserved.</p>
-        <p>Made with ❤️ in Yamunanagar, Haryana 🇮🇳</p>
+      <div class="footer__bottom">
+        <span>&copy; 2021–2026 DrinkoSip Beverages. All rights reserved.</span>
+        <span>Made with ❤️ in Yamunanagar, Haryana 🇮🇳</span>
       </div>
     </div>
   </footer>
 
-  <script src="js/bubbles.js"></script>
+  <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
